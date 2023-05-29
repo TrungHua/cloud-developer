@@ -1,4 +1,4 @@
-import { JwtPayload } from './JwtPayload'
+import JwtPayload from './JwtPayload'
 import { JwtHeader } from 'jsonwebtoken'
 
 /**

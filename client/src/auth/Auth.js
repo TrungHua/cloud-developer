@@ -1,15 +1,15 @@
 import auth0 from 'auth0-js';
-import { authConfig } from '../config';
-
+import { authConfig } from '../config'
 export default class Auth {
   accessToken;
   idToken;
   expiresAt;
 
+  
   auth0 = new auth0.WebAuth({
     domain: authConfig.domain,
     clientID: authConfig.clientId,
-    redirectUri: authConfig.callbackUrl,
+    redirectUri: authConfig.callbackUrl, 
     responseType: 'token id_token',
     scope: 'openid'
   });
